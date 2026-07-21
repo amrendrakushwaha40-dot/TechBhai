@@ -3,97 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Techbhai</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>My Website</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-background:#050816;
-color:white;
-overflow-x:hidden;
+body {
+    background: #f5f7fb;
+    color: #222;
 }
 
-#bg{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-1;
-background:
-radial-gradient(circle at 20% 20%,#2b1055 0%,transparent 30%),
-radial-gradient(circle at 80% 30%,#7597de 0%,transparent 30%),
-radial-gradient(circle at 50% 80%,#00d4ff 0%,transparent 35%);
-animation:bgMove 12s infinite alternate;
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes bgMove{
-0%{transform:scale(1);}
-100%{transform:scale(1.2) rotate(3deg);}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-section{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-padding:50px;
-text-align:center;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
 }
 
-h1{
-font-size:60px;
-margin-bottom:20px;
+.hero {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
 }
 
-p{
-font-size:20px;
-max-width:700px;
-line-height:1.8;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.btn{
-margin-top:30px;
-padding:15px 35px;
-border-radius:50px;
-background:#00d4ff;
-color:#000;
-font-weight:bold;
-text-decoration:none;
-transition:.4s;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px cyan;
+.btn {
+    display: inline-block;
+    background: white;
+    color: #2563eb;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div id="bg"></div>
+<header>
+    <div class="logo">My Website</div>
 
-<section id="home">
-<h1>Techbhai</h1>
-<p>Professional Portfolio Website</p>
-<a href="#about" class="btn">Explore</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to My Website</h1>
+    <p>Professional, Modern and Easy to Use Website</p>
+    <a href="#contact" class="btn">Get Started</a>
 </section>
 
 <section id="about">
-<h1>About Me</h1>
-<p>This is a premium cinematic portfolio website.</p>
+    <h2>About Us</h2>
+    <p>We provide professional and reliable services for our customers.</p>
 </section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Service 1</h3>
+            <p>Professional service with quality and reliability.</p>
+        </div>
+
+        <div class="card">
+            <h3>Service 2</h3>
+            <p>Modern solutions for your business and needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Service 3</h3>
+            <p>Fast, secure and customer-friendly support.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: example@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 My Website. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
