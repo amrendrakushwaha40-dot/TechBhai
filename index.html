@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techbhai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+#bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:
+radial-gradient(circle at 20% 20%,#2b1055 0%,transparent 30%),
+radial-gradient(circle at 80% 30%,#7597de 0%,transparent 30%),
+radial-gradient(circle at 50% 80%,#00d4ff 0%,transparent 35%);
+animation:bgMove 12s infinite alternate;
+}
+
+@keyframes bgMove{
+0%{transform:scale(1);}
+100%{transform:scale(1.2) rotate(3deg);}
+}
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:50px;
+text-align:center;
+}
+
+h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+max-width:700px;
+line-height:1.8;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+border-radius:50px;
+background:#00d4ff;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px cyan;
+}
+</style>
+</head>
+
+<body>
+
+<div id="bg"></div>
+
+<section id="home">
+<h1>Techbhai</h1>
+<p>Professional Portfolio Website</p>
+<a href="#about" class="btn">Explore</a>
+</section>
+
+<section id="about">
+<h1>About Me</h1>
+<p>This is a premium cinematic portfolio website.</p>
+</section>
+
+</body>
+</html>

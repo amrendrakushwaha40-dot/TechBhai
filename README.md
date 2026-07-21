@@ -1,2 +1,0 @@
-# TechBhai
-Welcome to Techbhai
