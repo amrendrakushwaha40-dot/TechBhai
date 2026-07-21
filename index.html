@@ -64,19 +64,27 @@ animation:bgMove 12s ease infinite;
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
 }
-    .hero::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-image:
-    radial-gradient(circle,rgba(255,255,255,.18) 2px,transparent 2px),
-    radial-gradient(circle,rgba(59,130,246,.30) 3px,transparent 3px);
-    background-size:80px 80px,140px 140px;
-    animation:particlesMove 18s linear infinite;
-    pointer-events:none;
+    .hero{
+    background: linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
+    background-size: 300% 300%;
+    animation: bgMove 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 110px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes bgMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
 
 @keyframes particlesMove{
